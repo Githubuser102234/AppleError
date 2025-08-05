@@ -9,7 +9,6 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Error">
-  <link rel="apple-touch-icon" href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
 
   <style>
     html, body {
@@ -23,12 +22,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
     }
 
     .apple-logo {
-      width: 80px;
-      height: auto;
+      font-size: 80px;
       margin-bottom: 20px;
+      line-height: 1;
     }
 
     .error-text {
@@ -38,8 +38,8 @@
   </style>
 </head>
 <body>
-  <!-- Apple Logo SVG -->
-  <img class="apple-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_white.svg" alt="Apple Logo">
+  <!-- Apple Logo Emoji -->
+  <div class="apple-logo"></div>
 
   <!-- Error Message -->
   <div class="error-text">Unknown error (0x0)</div>
